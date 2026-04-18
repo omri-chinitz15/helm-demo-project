@@ -28,5 +28,6 @@ jobs:
             --wait `
             --timeout 2m
 
+            
       - name: Verify deployment
         run: kubectl get pods -n my-demo-project
