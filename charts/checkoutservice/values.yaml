@@ -1,0 +1,14 @@
+service_name: checkoutservice
+port: 5050
+env:
+  EMAIL_SERVICE_ADDR: "emailservice:50053"
+  PRODUCT_CATALOG_SERVICE_ADDR: "productcatalogservice:3550"
+  CURRENCY_SERVICE_ADDR: "currencyservice:7000"
+  CART_SERVICE_ADDR: "cartservice:7070"
+  RECOMMENDATION_SERVICE_ADDR: "recommendationservice:8081"
+  CHECKOUT_SERVICE_ADDR: "checkoutservice:5050"
+  SHIPPING_SERVICE_ADDR: "shippingservice:50051"
+  AD_SERVICE_ADDR: "adservice:9555"
+  SHOPPING_ASSISTANT_SERVICE_ADDR: "shoppingassistantservice:50052"
+  DISABLE_PROFILER: "true"
+  PAYMENT_SERVICE_ADDR: "paymentservice:50054"

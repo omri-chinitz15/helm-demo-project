@@ -1,0 +1,15 @@
+service_name: frontend
+env:
+  PRODUCT_CATALOG_SERVICE_ADDR: "productcatalogservice:3550"
+  CURRENCY_SERVICE_ADDR: "currencyservice:7000"
+  CART_SERVICE_ADDR: "cartservice:7070"
+  RECOMMENDATION_SERVICE_ADDR: "recommendationservice:8081"
+  CHECKOUT_SERVICE_ADDR: "checkoutservice:5050"
+  SHIPPING_SERVICE_ADDR: "shippingservice:50051"
+  AD_SERVICE_ADDR: "adservice:9555"
+  SHOPPING_ASSISTANT_SERVICE_ADDR: "shoppingassistantservice:50052"
+  PAYMENT_SERVICE_ADDR: "paymentservice:50054"
+  DISABLE_PROFILER: "true"
+ports:
+  container_port: 8080
+  ingress_port: 80

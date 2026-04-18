@@ -1,0 +1,4 @@
+service_name: currencyservice
+port: 7000
+env:
+  DISABLE_PROFILER: "true"

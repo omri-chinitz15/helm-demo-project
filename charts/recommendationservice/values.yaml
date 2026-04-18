@@ -1,0 +1,6 @@
+service_name: recommendationservice
+ports:
+  container_port: 8080
+  ingress_port: 8081
+env:
+  PRODUCT_CATALOG_SERVICE_ADDR: "productcatalogservice:3550"

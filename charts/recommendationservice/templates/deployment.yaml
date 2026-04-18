@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "myservice.name"  . }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ include "myservice.name"  . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "myservice.name"  . }}
+    spec:
+      containers:
+        - name: {{ include "myservice.name"  . }}
+          image: {{ include "image.fullname" . }}
+          imagePullPolicy: Never
+          {{ include "myservice.envs" . | nindent 10 }}
+          ports:
+            - containerPort: {{ .Values.ports.container_port }}
+
+

@@ -1,0 +1,7 @@
+service_name: paymentservice
+ports:
+  container_port: 50054
+  ingress_port: 50054
+env:
+  DISABLE_PROFILER: "true"
+  PORT: 50054
